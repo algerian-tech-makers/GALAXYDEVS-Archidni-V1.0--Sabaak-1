@@ -39,7 +39,7 @@ exports.createSchool = catchAsyncError(async (req, res, next) => {
 
 //Get All Schools
 exports.getAllSchools = catchAsyncError(async (req, res, next) => {
-  const resultParPage = 2;
+  const resultParPage = 100;
   const schoolsCount = await School.countDocuments();
   const apiFeature = new ApiFeatures(School.find(), req.query)
     .search()

@@ -1,0 +1,128 @@
+footer {
+    background-color: #565F5A;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #D9D9D9;
+}
+
+footer .container .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .container .content .logo {
+    width: 12%;
+    color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+footer .container .content .logo p {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+}
+
+footer .container .content .subscribe {
+    width: 45%;
+}
+
+footer .container .content .subscribe .input {
+    position: relative;
+    width: 70%;
+}
+
+footer .container .content .subscribe h3 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 35px;
+    letter-spacing: 0.01em;
+    padding: 15px 0;
+}
+
+footer .container .content .subscribe>p {
+    padding-bottom: 15px
+}
+
+footer .container .content .subscribe input {
+    padding: 10px;
+    border: none;
+    box-shadow: 8.52874px 6.09195px 24.3678px rgba(0, 0, 0, 0.11);
+    border-radius: 8.52874px;
+}
+
+footer .container .content .subscribe input[type="email"] {
+    width: 100%;
+}
+
+footer .container .content .subscribe input[type="email"]:focus {
+    outline: none;
+}
+
+footer .container .content .subscribe input[type="submit"] {
+    background-color: var(--main-color);
+    color: white;
+    cursor: pointer;
+    padding: 0px 20px;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+footer .container hr {
+    /* margin: 90px 0 40px; */
+    margin: 50px 0;
+
+    border-bottom-color: #D9D9D9;
+}
+
+
+footer .container .content .links {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+footer .container .content .links ul {
+    padding: 0;
+}
+
+footer .container ul li {
+    margin-bottom: 10px;
+}
+
+footer .container ul li a {
+    color: #D9D9D9;
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {
+    footer .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media(max-width:767.9px) {
+    footer .container .content {
+        gap: 50px;
+    }
+
+    footer .container .content .subscribe {
+        width: auto;
+    }
+
+    footer .container .content .links {
+        width: 94%;
+    }
+}

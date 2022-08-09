@@ -1,0 +1,57 @@
+.sidebar {
+  /* background-color: rgb(255, 255, 255); */
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 0;
+}
+
+.sidebar > a:first-child {
+  padding: 0;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+.sidebar > a > img {
+  width: 100%;
+  margin: 0 auto;
+  transition: all 0.5s;
+  background-color: #fff;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.sidebar > a > img:hover {
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+.sidebar .anchor {
+  margin-left: 0;
+  font-size: inherit;
+}
+.sidebar a,
+.sidebar .anchor {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+  font: 200 1rem "Roboto";
+  padding: 2rem;
+  transition: all 0.5s;
+}
+.sidebar a:hover,
+.sidebar .anchor:hover {
+  color: #ffbd59;
+  transform: scale(1.1);
+}
+
+.sidebar a > P,
+.sidebar .anchor > p {
+  display: flex;
+  align-items: center;
+}
+.sidebar a > p > svg,
+.sidebar .anchor > p > svg {
+  margin-right: 0.5rem;
+}
+
+.MuiTypography-root {
+  background-color: #fff !important;
+}

@@ -1,0 +1,122 @@
+.events-news .container {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(47%, 1fr));
+    gap: 28px;
+    padding-bottom: var(--padding-bottom);
+    padding-top: var(--padding-top);
+    background: var(--background-each-section);
+}
+
+.events-news .container .content {
+    /* width: 40%;
+    align-self: center; */
+}
+
+.events-news .container .content p:first-of-type {
+    margin-bottom: 20px;
+    color: var(--green-color);
+    ;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.events-news .container .content h3 {
+    font-size: 40px;
+    width: 80%;
+    margin-bottom: 30px;
+    color: var(--main-color);
+}
+
+.events-news .container .content p {
+    color: var(--text-color);
+    font-size: 14px;
+    width: 80%;
+    margin-bottom: 30px;
+    padding: 20px 0;
+    line-height: 25px;
+}
+
+.events-news .container .content button {
+    border: 1px solid var(--main-color);
+    padding: 10px;
+    color: var(--main-color);
+    background-color: transparent;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.events-news .container .content button:hover {
+    color: white;
+    background-color: var(--main-color);
+}
+
+.events-news .container .image {
+    /* width: 490px;
+    padding-top: 40px;
+    background-color: var(--second-color);
+    position: relative; */
+}
+
+.events-news .container .image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.events-news .container .image .doctor {
+    position: absolute;
+}
+
+@media (max-width:991px) {
+    .events-news .container .image img {
+        width: 95%;
+        height: 100%;
+    }
+}
+
+@media (max-width:767px) {
+    .events-news .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .events-news .container .content,
+    .events-news .container .image {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .events-news .container .content p,
+    .events-news .container .content h3 {
+        width: 100%;
+    }
+
+    .events-news .container .image img {
+        width: 108%;
+    }
+
+    .events-news .container {
+        grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+        gap: 40px;
+    }
+
+    /* .button {
+        margin: 0 auto;
+    } */
+
+
+
+}
+
+@media (max-width:767px) {
+    .events-news .container .image {
+        background-color: transparent;
+    }
+
+    .events-news .container .image img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,259 @@
+:root {
+  --main-background-color: #f6fff9;
+  --main-color: #3bac62;
+  --green-color: #297845;
+  --background-color: #e3efff;
+  --gray-color: #565f5a;
+  --gray-text-color: #6c7770;
+  --white-text: #f9fbff;
+  --white-color: #fff;
+  --padding-top: 50px;
+  --padding-bottom: 50px;
+  --background-each-section: rgba(0, 255, 89, 0.795);
+  --background-each-section: rgba(169, 255, 199, 0.1);
+}
+.flag {
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+  list-style: none !important;
+  font-family: "Bai Jamjuree", sans-serif !important;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sp {
+  margin: 100px 0;
+}
+
+.button.active {
+  text-align: center;
+  background-color: var(--main-color);
+  color: var(--white-text);
+  padding: 12px 29px;
+  width: 150px;
+  display: inline-block;
+}
+
+.button {
+  text-align: center;
+  border: 1px solid var(--main-color);
+  color: var(--main-color);
+  /* padding: 6px 30px; */
+  padding: 12px 29px;
+  width: 150px;
+  border-radius: 2.70213px;
+  -webkit-border-radius: 2.70213px;
+  -moz-border-radius: 2.70213px;
+  -ms-border-radius: 2.70213px;
+  -o-border-radius: 2.70213px;
+  display: inline-block;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;500&display=swap");
+@tailwind base;
+@tailwind components;
+
+* {
+  @apply box-border m-0 p-0 font-BaiJamjuree;
+}
+
+html {
+  @apply scroll-smooth;
+}
+
+p,
+dl,
+ol,
+ul,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply m-0;
+}
+
+.space {
+  @apply m-[100px];
+}
+
+.container {
+  @apply w-4/5 mx-auto;
+}
+
+nav .container {
+  @apply flex justify-between items-center;
+}
+
+.nav-bar {
+  @apply flex items-center gap-10;
+}
+
+.login,
+.active {
+  @apply text-[#3BAC62];
+}
+
+nav button {
+  @apply text-center bg-[#3BAC62] border border-[#3BAC62] rounded-md px-8 py-2 text-[#F9FBFF];
+}
+
+.landing .container {
+  @apply flex justify-between items-center pb-8;
+}
+
+.landing .container .content {
+  @apply basis-2/3 text-[#6c7770];
+}
+
+.landing .container .content h1 {
+  @apply not-italic font-bold text-[60px] leading-normal tracking-[0.01em] text-[#3bac62] m-0;
+}
+
+.landing .container .content p {
+  @apply my-8 leading-6 w-5/6;
+}
+
+.btns {
+  @apply flex items-center gap-8;
+}
+
+.btns button {
+  @apply py-2 px-6;
+}
+
+.btns .primary {
+  @apply bg-[#3bac62] text-white;
+}
+
+.btns .secondary {
+  @apply border border-[#3bac62] text-[#3bac62];
+}
+
+@tailwind utilities;
+
+/* .search form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 8.52874px 6.09195px 24.3678px rgba(0, 0, 0, 0.11);
+  height: 80px;
+  width: 100%;
+  margin: -9.5% auto;
+  background-color: white;
+  top: -40px;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.search form .line {
+  height: 60px;
+  width: 2px;
+  background-color: #ababab99;
+}
+
+.search .from-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search .from-control.search input {
+  border: none;
+  outline: none;
+  height: 48px;
+}
+
+.search .from-control i {
+  width: 40px;
+  font-size: 22px;
+}
+
+.search .from-control select {
+  border: none;
+  height: 48px;
+}
+
+.search .from-control.submit button {
+  border: none;
+  color: white;
+  background-color: #3bac62;
+  padding: 12px 29px;
+  width: 139.65px;
+}
+
+.search form .form-control:focus,
+.search form .form-select:focus {
+  box-shadow: none;
+}
+
+form .search,
+form .address,
+form .fees {
+  width: 30%;
+}
+
+form select {
+  background-color: transparent;
+  width: 100%;
+} */
+
+.explore {
+  background-image: url("./assets/images/bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center top;
+  background-attachment: fixed;
+}
+.explore-content {
+  padding: 100px 0;
+}
+.explore-content .explore-form {
+  all: unset;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.explore-content .explore-form .search input,
+.explore-content .explore-form .address select,
+.explore-content .explore-form .fees select {
+  background-color: transparent;
+  border-bottom: 1px solid black;
+  border-radius: 0;
+}
+.explore-content h3 {
+  padding: 20px 0;
+}
+.explore-btn button {
+  border: 1px solid #3bac62;
+  color: #3bac62;
+  background-color: white;
+}

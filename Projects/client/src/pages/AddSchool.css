@@ -1,0 +1,21 @@
+.add_school {
+  padding: 100px 0;
+}
+
+.add_school .container .row {
+  justify-content: space-between;
+}
+
+.add_school .container .details .btn {
+  text-align: center;
+}
+
+.add_school .container .image {
+  align-self: center;
+  text-align: center;
+}
+
+.add_school .container .image img {
+  display: block;
+  padding-bottom: 20px;
+}

@@ -1,0 +1,211 @@
+.apply {
+    /* background-image: url("../images/bg.png"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    padding-top: 150px;
+    padding-bottom: 100px;
+
+}
+
+.apply .container {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 25px;
+    flex-wrap: wrap;
+    box-shadow: 0px 0px 15px -12px #1e1e1e;
+}
+
+.apply .container .left-box {
+    text-align: center;
+    width: 35%;
+    background: rgba(177, 222, 192, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 175px;
+    padding: 50px 10px;
+}
+
+.apply .container .left-box>h1 {
+    color: #3BAC62;
+}
+
+.apply .container .left-box .desc h3 {
+    padding-bottom: 50px;
+}
+
+.apply .container .left-box .desc p {
+    font-size: 44px;
+    line-height: 50px;
+    color: #3BAC62;
+}
+
+.apply .container .right-box {
+    width: 60%;
+}
+
+.apply .container .suggest,
+.apply .container .info-study,
+.apply .container .right-box h3:first-child,
+.apply .container .price h3 {
+    color: #06110A;
+    font-size: 20px;
+    padding-bottom: 30px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    padding-top: 30px;
+}
+
+.apply .container .right-box .input-group label {
+    color: #565F5A;
+}
+
+.apply .container .right-box .input-group {
+    justify-content: space-between;
+}
+
+.apply .container .right-box .input-group>div {
+    width: 48%;
+}
+
+
+.apply .container .input-file {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px dotted #3BAC62;
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.apply .container .input-file .hint p {
+    font-size: 20px;
+    color: #3BAC62;
+}
+
+.apply .container .input-file .hint h4 {
+    font-size: 13px;
+    text-align: center;
+    color: #565F5A;
+}
+
+
+
+.apply .container .input-file .line {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.apply .container .input-file .line>hr {
+    width: 30%;
+    color: #3BAC62;
+}
+
+.apply .container .input-file input[type="file"] {
+    display: none;
+}
+
+.apply .container .input-file .custom-input {
+    padding: 12px 29px;
+    border: 1px solid #3BAC62;
+    color: #3BAC62;
+}
+
+.apply .container .input-file .file-icon i {
+    color: #AAAAAA;
+    font-size: 40px;
+}
+
+
+
+.apply .container .price .checkbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.apply .container .price .form-check {
+    border: 1px solid #3BAC62;
+    width: 45%;
+    padding: 9px 35px;
+}
+
+.apply .container .price .form-check-input:checked {
+    background-color: #3BAC62;
+    border-color: #3BAC62;
+}
+
+
+.apply .container .info-study .options {
+    display: flex;
+    gap: 20px;
+}
+
+.apply .container .info-study .options .form-select {
+    border: 1px solid #3BAC62;
+}
+
+.apply .container .form-control:focus,
+.apply .container .form-select:focus {
+    border-color: #3BAC62;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(59 172 98 / 25%);
+}
+
+.apply .container .form-select,
+.apply .container .form-control {
+    border-color: #3BAC62;
+}
+
+
+
+.apply .container .submit input {
+    border: none;
+    background-color: #3BAC62;
+    color: white;
+    width: 140px;
+    height: 50px;
+    margin: 0 auto;
+    display: block;
+}
+
+
+@media (max-width:991.9px) {
+    .apply .container .left-box {
+        flex-basis: 100%;
+        gap: 50px;
+    }
+
+    .apply .container .right-box {
+        flex-basis: 100%;
+    }
+
+    .apply .container .left-box .desc h3 {
+        width: 70%;
+        margin: auto !important;
+    }
+}
+
+
+@media(max-width:768px) {
+    .apply .container .left-box .desc p {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .apply .container .suggest,
+    .apply .container .info-study,
+    .apply .container .right-box h3:first-child,
+    .apply .container .price h3 {
+        padding-bottom: 39px;
+        padding-top: 40px;
+        text-align: center;
+    }
+}

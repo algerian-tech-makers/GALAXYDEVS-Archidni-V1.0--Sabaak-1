@@ -1,0 +1,126 @@
+.review {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.review .container .desc h1 {
+  font-size: 40px;
+  color: #297845;
+}
+
+.review .container .desc p {
+  color: #565f5a;
+  padding: 10px 0;
+}
+
+.review .container .desc .location {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+  padding-right: 20px;
+  font-size: 20px;
+}
+
+.review .container .desc .location i,
+.review .container .desc .location span {
+  display: block;
+  color: #3bac62;
+}
+
+.review .container .info {
+  background: rgba(169, 255, 199, 0.1);
+  /* box-shadow: 0px 4px 15px #2D9B59; */
+  box-shadow: 0px 0px 11px -4px #2d9b59;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.review .container .info .box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.review .container .info .box svg,
+.review .container .info .box i {
+  color: #2d9b59;
+  font-size: 20px;
+}
+
+.review .container .info span {
+  display: block;
+}
+
+.review .container .information {
+  padding: 100px 0;
+  justify-content: space-between;
+}
+
+.review .container .mybtn {
+  text-align: center;
+}
+
+.review .container .mybtn a {
+  margin: 0 30px;
+}
+
+@media (max-width: 991.9px) {
+}
+
+@media (max-width: 767.9px) {
+  .review .container .info {
+    margin-top: 50px;
+  }
+}
+
+.slick-slide {
+  /* border-bottom: 1px solid #ccc;
+    padding: 50px 0; */
+}
+
+.slick-dots li button {
+  width: 15px;
+  height: 15px;
+  padding: 5px;
+  border: 1px solid #549f84;
+  border-radius: 50%;
+}
+
+.slick-dots li button:before {
+  width: 15px;
+  height: 15px;
+  font-size: 15px;
+  line-height: 17px;
+  color: white;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #3bac62;
+}
+
+.slid {
+  border-bottom: 1px solid #ccc;
+  padding: 50px 0;
+}
+
+.row > .slider {
+  padding: 0;
+}
+
+.slick-dots {
+  bottom: -35px;
+}
+
+.kiw {
+  height: 350px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

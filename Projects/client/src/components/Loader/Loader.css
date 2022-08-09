@@ -1,0 +1,23 @@
+.loading {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  display: grid;
+  place-items: center;
+  max-width: 100%;
+  z-index: 1000;
+}
+.loading > div {
+  width: 10vmax;
+  /* background-color: rgb(255, 191, 0); */
+  height: 10vmax;
+  border-bottom: 5px solid rgb(59 172 98 / var(--tw-bg-opacity));
+  border-radius: 50%;
+  animation: loadingRotate 800ms linear infinite;
+}
+
+@keyframes loadingRotate {
+  to {
+    transform: rotateZ(-360deg);
+  }
+}

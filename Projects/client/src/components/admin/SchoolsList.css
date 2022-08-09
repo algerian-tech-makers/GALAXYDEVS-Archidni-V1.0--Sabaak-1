@@ -1,0 +1,63 @@
+.schoolListContainer {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  border-left: 1px solid rgba(0, 0, 0, 0.158);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#schoolListHeading {
+  font: 400 2rem "Roboto";
+  padding: 0.5vmax;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.637);
+  transition: all 0.5s;
+  margin: 2rem;
+  text-align: center;
+}
+
+.schoolListTable {
+  background-color: white;
+  border: none !important;
+}
+
+.schoolListTable div {
+  color: rgba(0, 0, 0, 0.678);
+  border: none !important;
+  background-image: url("../../assets/images/bg.png");
+  text-align: center;
+}
+.MuiDataGrid-cell--textLeft {
+  justify-content: center !important;
+}
+.MuiDataGrid-cellContent {
+  text-align: center;
+}
+.schoolListTable a,
+.schoolListTable button {
+  color: rgba(0, 0, 0, 0.527);
+  transition: all 0.5s;
+}
+
+.schoolListTable a:hover {
+  color: tomato;
+}
+
+.schoolListTable button:hover {
+  color: rgb(236, 30, 30);
+}
+
+.MuiDataGrid-columnHeader div {
+  color: rgb(7, 5, 5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .schoolListTable div {
+    font-size: 2.2vw;
+  }
+}

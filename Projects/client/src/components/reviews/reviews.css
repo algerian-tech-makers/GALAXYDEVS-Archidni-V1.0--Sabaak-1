@@ -1,0 +1,32 @@
+.review-title {
+  @apply text-3xl text-[#3BAC62] font-semibold w-1/2 leading-10 my-4;
+}
+
+.review-card {
+  @apply flex gap-2 items-start bg-white px-4 py-8 mx-2 border border-[#3BAC62] rounded-lg;
+}
+.review-left-side {
+  @apply w-full flex flex-col items-center;
+}
+.review-left-side h1 {
+  @apply text-[#3BAC62] py-1;
+}
+.review-left-side p {
+  @apply text-[#6C7770];
+}
+.review-right-side {
+  @apply flex flex-col items-start justify-start mt-8;
+}
+.review-right-side p {
+  @apply w-[90%] mx-auto leading-8 py-1;
+}
+.review-right-side .last-quote {
+  @apply self-end;
+}
+
+.review-right-side div {
+  @apply self-end flex items-center gap-2 mt-6;
+}
+.review-right-side div .star {
+  @apply text-[#FFCE31];
+}

@@ -1,0 +1,222 @@
+.schools {
+  /* padding-top: 100px;
+    padding-bottom: 100px; */
+}
+
+.schools .container {
+  padding-bottom: var(--padding-bottom);
+  padding-top: var(--padding-top);
+  background: var(--background-each-section);
+}
+
+.schools .container .content {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.schools .container .content h3 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: var(--main-color);
+}
+
+.schools .container .schools-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+@media (max-width: 767.9px) {
+  .schools .container .schools-container {
+    grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
+    gap: 40px;
+  }
+}
+
+.schools .container .schools-container .school {
+  padding: 25px 30px;
+  background-color: #fbfdfc;
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  flex: 0.3;
+  /* transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s; */
+}
+
+/* .schools .container .schools-container .school:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+} */
+
+.schools .container .schools-container .school img {
+  background-color: #fcecca;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.schools .container .schools-container .school .rate {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.schools .container .schools-container .school .rate span:first-of-type {
+  width: 50%;
+  background-color: var(--background-color);
+  color: var(--main-color);
+  text-align: center;
+  padding: 7px;
+  display: block;
+  width: fit-content;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.schools .container .schools-container .school .rate span {
+  width: 30%;
+  text-align: right;
+}
+
+.schools .container .schools-container .school .rate span i {
+  color: #ffce31;
+}
+
+.schools .container .schools-container .school h4 {
+  margin-bottom: 10px;
+  color: var(--green-color);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.schools .container .schools-container .school p {
+  color: var(--gray-text-color);
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 10px 0;
+}
+
+.schools .container .schools-container .school a {
+  padding: 10px 0;
+  color: #000000;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.schools .container .schools-container .school a i {
+  margin-left: 6px;
+  font-size: 20px;
+}
+
+.schools .container .button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+/**** search***/
+.search {
+}
+
+.search form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 8.52874px 6.09195px 24.3678px rgba(0, 0, 0, 0.11);
+  height: 80px;
+  width: 90%;
+  margin: 0 auto;
+  background-color: white;
+  top: -40px;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.search form .line {
+  height: 67px;
+  width: 2px;
+  background-color: #ababab99;
+}
+
+.search .from-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+}
+
+.search .from-control.search input {
+  border: none;
+  outline: none;
+  height: 48px;
+}
+
+.search .from-control i {
+  width: 40px;
+  font-size: 22px;
+}
+
+.search .from-control select {
+  border: none;
+  /* outline: none;
+   width: 87px;
+   height: 67px; */
+  height: 48px;
+}
+
+/* .search .from-control.submit {
+   padding-left: 50px;
+} */
+
+.search .from-control.submit button {
+  border: none;
+  color: white;
+  background-color: #3bac62;
+  padding: 12px 29px;
+  width: 139.65px;
+}
+
+.search form .form-control:focus,
+.search form .form-select:focus {
+  box-shadow: none;
+}
+
+@media (max-width: 991.9px) {
+  .search form {
+    top: 0;
+    width: 100%;
+  }
+
+  .search {
+    margin: 40px 0;
+  }
+}
+
+/* end Search */
